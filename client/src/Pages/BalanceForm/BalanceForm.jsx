@@ -219,7 +219,7 @@ const BalanceForm = () => {
          <div><input
           type="text"
           className="border border-gray-400 rounded-md p-2 mt-4"
-          placeholder="Enter Birth Balance"
+          placeholder="Enter sign copy Balance"
           value={signBalance}
           onChange={(e) => setSignBalance(e.target.value)}
         />
