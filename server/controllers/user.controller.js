@@ -86,7 +86,7 @@ export const updatePassword = async (req, res) => {
             return res.status(404).json({ message: "User not found" });
         }
 
-        const isPasswordCorrect = await password === user?.password 
+        const isPasswordCorrect = await oldPassword === user?.password 
         // Check if the old password matches
         if (!isPasswordCorrect) {
 			return res.status(400).json({ message: "Invalid  password" });
