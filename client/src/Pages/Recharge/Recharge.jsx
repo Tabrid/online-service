@@ -24,7 +24,7 @@ const Recharge = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = { amount, transId };
-        if(amount<199){
+        if(amount<99){
             toast.error('Minimum recharge amount is 200!');
         }
         else{
